@@ -1,14 +1,14 @@
 {
   "name": "javascript",
   "type": "module",
-  "description": "",
+  "description": "\"\"",
   "author": "",
   "contributors": [],
   "private": true,
-  "license": "",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/exercism/javascript"
+    "url": "git+https://github.com/exercism/javascript.git"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
@@ -17,18 +17,25 @@
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.6",
     "babel-jest": "^29.6.4",
+    "chai": "^5.1.1",
     "chalk": "^4.1.2",
     "core-js": "~3.32.1",
     "diff": "^5.1.0",
     "eslint": "^8.49.0",
     "jest": "^29.6.3",
+    "mocha": "^10.7.3",
     "prettier": "^3.0.2",
     "shelljs": "^0.8.5"
   },
-  "dependencies": {},
   "scripts": {
-    "test": "jest ./*",
+    "test": "npx mocha tests",
     "watch": "jest --watch ./*",
     "lint": "eslint ."
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/exercism/javascript/issues"
+  },
+  "homepage": "https://github.com/exercism/javascript#readme",
+  "version": "1.0.0",
+  "main": "index.js"
 }
