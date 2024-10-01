@@ -10,7 +10,7 @@ export default function postSize(message) {
     const domain = end.some(function(ending) {
       return word.includes(ending);
     });
-    if (url || domain) {
+    if (url & domain) {
       arr.push(word);
     }
   });
