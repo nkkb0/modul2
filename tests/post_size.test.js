@@ -56,7 +56,7 @@ describe('Функция проверки расчета размера пост
     const result = postSize('look at my next site http/deceived.com');
     assert.equal(expectedResult, result);
   });
-  
+
   it('без пробела', function () {
     const expectedResult = 4;
     const result = postSize('fish orwww.meat.net');
