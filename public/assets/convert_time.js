@@ -10,46 +10,46 @@ export default function convertTime(posted, now) {
   const dEnd = String(days).at(-1);
   const yEnd = String(years).at(-1);
   if (years > 0) {
-    if (Number(yEnd) === 1) {
+    if (yEnd === '1') {
       return `${years} год назад`;
     }
-    if (Number(yEnd) > 1 && Number(yEnd) < 5) {
+    if (yEnd > '1' && yEnd < '5') {
       return `${years} года назад`;
     }
-    if (Number(yEnd) >= 5 || Number(yEnd) === 0) {
+    if (yEnd >= '5' || yEnd === '0') {
       return `${years} лет назад`;
     }
   }
   if (days > 0) {
-    if (Number(dEnd) === 1) {
+    if (dEnd === '1') {
       return `${days} день назад`;
     }
-    if (Number(dEnd) > 1 && Number(dEnd) < 5) {
+    if (dEnd > '1' && dEnd < '5') {
       return `${days} дня назад`;
     }
-    if (Number(dEnd) >= 5 || Number(yEnd) === 0) {
+    if (dEnd >= '5' || yEnd === '0') {
       return `${days} дней назад`;
     }
   }
   if (hours > 0) {
-    if (Number(hEnd) === 1) {
+    if (hEnd === '1') {
       return `${hours} час назад`;
     }
-    if (Number(hEnd) > 1 && Number(yEnd) < 5) {
+    if (hEnd > '1' && yEnd < '5') {
       return `${hours} часа назад`;
     }
-    if (Number(hEnd) >= 5 || Number(yEnd) === 0) {
+    if (hEnd >= '5' || yEnd === '0') {
       return `${hours} часов назад`;
     }
   }
   if (minutes > 0) {
-    if (Number(mEnd) === 1 && Number(mEnd2) !== 1) {
+    if (mEnd === '1' && mEnd2 !== '1') {
       return `${minutes} минуту назад`;
     }
-    if (Number(mEnd) > 1 && Number(mEnd) < 5 && Number(mEnd2) !== 1) {
+    if (mEnd > '1' && mEnd < '5' && mEnd2 !== '1') {
       return `${minutes} минуты назад`;
     }
-    if (Number(mEnd) >= 5 || Number(yEnd) === 0 || (Number(mEnd2) === 1)) {
+    if (mEnd >= '5' || yEnd === '0' || (mEnd2 === '1')) {
       return `${minutes} минут назад`;
     }
   }
