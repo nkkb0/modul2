@@ -67,3 +67,119 @@ body {
 .people {
   width: 100%;
 }
+
+.statistics {
+  background-color: #0057ff;
+  color: #fff;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.statistics_item {
+  padding:0px 80px 30px 80px;
+}
+.statistics_num {
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+.statistics_text {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.posts {
+  width: 100%;
+}
+
+.posts_header {
+  font-weight: 800;
+  font-size: 24px;
+  text-align: left;
+  padding: 19px 16px;
+}
+
+.tweetContainer {
+  display: flex;
+  margin: 15px;
+}
+
+.avatar {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.nameTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeAgo {
+  font-size: 10px;
+  font-weight: 400;
+  color: #ABACB1;
+  text-align: end;
+  padding: 0px 16px 0px 100px;
+}
+
+.post {
+  margin-left: 15px;
+}
+
+.stat {
+  display: flex;
+  padding: 0px 0px 0px 83px;
+}
+
+.stat span{
+  font-size: 14px;
+  font-weight: 400;
+  color: #B1B1B1;
+  margin-right: 32px;
+  
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #e9e9e9;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1D1E22;
+}
+
+.nname {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ABACB1;
+}
+
+
+.tweetText {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1D1E22;
+  margin: 10px 0;
+}
+
+.tweetText img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.reg_text {
+  width: 100%;
+  font-size: 32px;
+  padding: 5px;
+  margin-bottom: 22px;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 800;
+  color: #000;
+}
