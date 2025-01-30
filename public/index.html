@@ -5,178 +5,211 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>twitter</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="assets/popupus.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <img class="dolphin" src="images/Vector.svg" alt="логотип" />
-    <p class="header_text">
-      Оставайся на связи с друзьями, даже когда их нет рядом
-    </p>
-    <button class="registration_button1" id="reg1">
-      Зарегестрироваться
-    </button>
-    <button class="registration_button2" id="auth1">
-      Войти
-    </button>
+    <header class="header">
+      <img class="dolphin" src="images/Vector.svg" alt="логотип">
+      <h1>Оставайся на связи с друзьями, даже когда их нет рядом</h1>
+      <button class="reg_button1  popup-link_reg"> Зарегестрироваться</button> <br>
+      <button class="ent_button1 popup-link_ent"> Войти</button>
+    </header>
 
-  </header>
+    <img class="people" src="images/cover.png" alt="люди у костра">
 
-  <img class="people" src="images/cover.png" alt="люди у костра" />
-
-  <div class="statistics">
-    <div class="statistics_item">
-      <div class="statistics_num">
-        20
+    <div class="statics">
+      <div class="static__items">
+        <div class="static__number">20</div>
+        <div class="static__text"> Пользователей зарегестрировано</div>
       </div>
-      <div class="statistics_text">Пользователей зарегистрировано</div>
-    </div>
-    <div class="statistics_item">
-      <div class="statistics_num">
-        556
-      </div>
-      <div class="statistics_text">Сообщений</br> написано</div>
-    </div>
-    <div class="statistics_item">
-      <div class="statistics_num">
-        58
-      </div>
-      <div class="statistics_text">Написано сегодня</div>
-    </div>
-  </div>
 
-  <div class="posts">
-    <div class="posts_header">Последние сообщения</div>
-    <div class="tweetContainer">
-      <img class="avatar" src="images/vega.png" alt="">
-      <div class="post">
-          <div class="nameTime">
-              <div>
-                  <span class="name">Vincent Vega</span>
-                  <span class="nname">@roizmangbn</span>
-              </div>
-          <p class="timeAgo">28 минут назад</p></div>
-          <div class="tweetText">
+      <div class="static__items">
+        <div class="static__number">556</div>
+        <div class="static__text"> Сообщений написано</div>
+      </div>
+
+      <div class="static__items">
+        <div class="static__number">58</div>
+        <div class="static__text"> Написано сегодня</div>
+      </div>
+    </div>
+
+    <div class="posts">
+      <div class="post__header">Последние сообщения</div>
+
+
+      <div class="tweet">
+        <img class="avatar" src="images/vega.png" alt="">
+        <div class="avname">
+          <div class="post__auther">
+            <div class="nnname">
+              <div class="name">Винсет Вега</div>
+              <div class="nname">@roizmangbn</div>
+            </div>
+            <div class="timeago">28 минут назад</div>
+          </div>
+          <div class="tweet__text">
             У них там все немного не так. В смысле, у них там все точно так же, как и здесь, только немного по-другому.
           </div>
-          <div class="stat">
-              <div>
-                 <img src="images/rep.png" alt=""> 
-                 <span>21</span>
-              </div>
-              <div>
-                 <img src="images/like.png" alt=""> 
-                 <span>23</span>
-              </div>
-              <div>
-                 <img src="images/dld.png" alt=""> 
-                 <span>9</span>
-              </div>
+
+          <div class="group">
+            <div>
+              <img src="images/rep.png" alt=""> 
+              <span>21</span>
+            </div>
+            <div>
+              <img src="images/like.png" alt=""> 
+              <span>23</span>
+            </div>
+            <div>
+              <img src="images/dld.png" alt=""> 
+              <span>9</span>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
 
-  <div class="line"></div>
+    <div class="line"></div>
 
-  <div class="tweetContainer">
+    <div class="tweet">
       <img class="avatar" src="images/Musk.png" alt="">
-      <div class="post">
-          <div class="nameTime">
-              <div>
-                  <span class="name">Elon Musk</span>
-                  <span class="nname">@elonmusk</span>
-              </div>
-          <p class="timeAgo">12 часов назад</p></div>
-          <div class="tweetText">Has anyone seen web3? I can’t find it.</div>
-          <div class="stat">
-              <div>
-                 <img src="images/rep.png" alt=""> 
-                 <span>21</span>
-              </div>
-              <div>
-                 <img src="images/like.png" alt=""> 
-                 <span>23</span>
-              </div>
-              <div>
-                 <img src="images/dld.png" alt=""> 
-                 <span>9</span>
-              </div>
+      <div class="avname">
+        <div class="post__auther">
+          <div class="nnname">
+            <div class="name">Elon Musk</div>
+            <div class="nname">@elonmusk</div>
           </div>
+          <div class="timeago">12 часов назад</div>
+          </div>
+          <div class="tweet__text">
+            Has anyone seen web3? I can’t find it.
+          </div>
+
+        <div class="group">
+          <div>
+            <img src="images/rep.png" alt=""> 
+            <span>21</span>
+          </div>
+          <div>
+            <img src="images/like.png" alt=""> 
+            <span>23</span>
+          </div>
+          <div>
+            <img src="images/dld.png" alt=""> 
+            <span>9</span>
+          </div>
+        </div>
       </div>
+    </div>
+
+  <div class="line"></div>
+
+  <div class="tweet">
+    <img class="avatar" src="images/alexander.png" alt="">
+    <div class="avname">
+      <div class="post__auther">
+        <div class="nnname">
+          <div class="name">Александр</div>
+          <div class="nname">@sportsru</div>
+        </div>
+        <div class="timeago">2 часа назад</div>
+      </div>
+      <div class="tweet__text">
+        Прикладываю фотки с последнего матча. С каждым днем играю все лучше. Еще пару лет и можно на Олимпиаду ехать!
+        <img src="images/tenis.png" alt="">
+      </div>
+
+      <div class="group">
+        <div>
+          <img src="images/rep.png" alt=""> 
+          <span>21</span>
+        </div>
+        <div>
+          <img src="images/like.png" alt=""> 
+          <span>23</span>
+        </div>
+        <div>
+          <img src="images/dld.png" alt=""> 
+          <span>9</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="line"></div>
 
-  <div class="tweetContainer">
-      <img class="avatar" src="images/alexander.png" alt="">
-      <div class="post">
-          <div class="nameTime">
-              <div>
-                  <span class="name">Alexander</span><br/>
-                  <span class="nname">@sportsru</span>
-              </div>
-          <p class="timeAgo">2 часа <br />назад</p></div>
-          <div class="tweetText">Прикладываю фотки с последнего матча. С каждым днем играю все лучше. Еще пару лет и можно на Олимпиаду ехать!
-          <img src="images/tenis.png" alt=""></div>
-          <div class="stat">
-              <div>
-                 <img src="images/rep.png" alt=""> 
-                 <span>21</span>
-              </div>
-              <div>
-                 <img src="images/like.png" alt=""> 
-                 <span>23</span>
-              </div>
-              <div>
-                 <img src="images/dld.png" alt=""> 
-                 <span>9</span>
-              </div>
-          </div>
+  <div class="tweet">
+    <img class="avatar" src="images/mia.png" alt="">
+    <div class="avname">
+      <div class="post__auther">
+        <div class="nnname">
+          <div class="name">Мия Уоллес</div>
+          <div class="nname">@mia</div>
+        </div>
+        <div class="timeago">1 день назад</div>
       </div>
-  </div>
-
-  <div class="line"></div>
-
-  <div class="tweetContainer">
-      <img class="avatar" src="images/mia.png" alt="">
-      <div class="post">
-          <div class="nameTime">
-              <div>
-                  <span class="name">Mia Wallace</span><br />
-                  <span class="nname">@mia</span>
-              </div>
-              <p class="timeAgo">1 день <br />назад</p>
-          </div>
-          <div class="tweetText"> Почему волк больше не ест бабушек? они вяжут во рту.
-          </div>
-          <div class="stat">
-              <div>
-                  <img src="images/rep.png" alt="">
-                  <span>21</span>
-              </div>
-              <div>
-                  <img src="images/like.png" alt="">
-                  <span>23</span>
-              </div>
-              <div>
-                  <img src="images/dld.png" alt="">
-                  <span>9</span>
-              </div>
-          </div>
+      <div class="tweet__text">
+        Идут по улице три помидора: папа-помидор, мама-помидор и ребенок-помидор. Ребенок-помидор начинает отставать. Папа-помидор разозлился, подбегает к ребенку-помидору, раздавливает всмятку... и говорит: «Догоняй, кетчуп!»
       </div>
+    
+      <div class="group">
+        <div>
+          <img src="images/rep.png" alt=""> 
+          <span>21</span>
+        </div>
+        <div>
+          <img src="images/like.png" alt=""> 
+          <span>23</span>
+        </div>
+        <div>
+          <img src="images/dld.png" alt=""> 
+          <span>9</span>
+        </div>
+      </div>
+    </div> 
   </div>
-</div>
 
-  <div class="registration">
-    <p class="reg_text">
-      Зарегистрируйтесь и узнайте обо всём первым
-    </p>
-      <button class="registration_button1" id="reg1">
-        Зарегистрироваться
-      </button>
-      <button class="registration_button2" id="auth1">
-        Войти
-      </button>
+  <div class="endreg">
+    <p class="regtext">Зарегистрируйтесь и узнайте обо всём первым</p>
+    <button class="reg_button2 popup-link_reg" data-popup="popup1"> Зарегестрироваться</button> <br>
+    <button class="ent_button2 popup-link_ent"> Войти</button>
   </div>
 
+  <div class="popup" id="popup1">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__close"></div>
+        <div class="popup__title">Регистрация</div>
+        <div>
+          <input class="email" placeholder="электронная почта" type="text" name="username" value="" />
+        </div>
+        <div>
+          <input class="password" placeholder="пароль" type="password" name="userpass" value="" />
+        </div>
+        <div>
+          <input class="password_2" placeholder="подтверждение пароля" type="password" name="userpass2" value="" />
+        </div>
+        <button class="reg_button3"> Зарегестрироваться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup2">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__close"></div>
+        <div class="popup__title">Авторизация</div>
+        <div>
+          <input class="email" placeholder="электронная почта" type="text" name="username" value="" />
+        </div>
+        <div>
+          <input class="password" placeholder="пароль" type="password" name="userpass" value="" />
+        </div>
+        <button class="reg_button3"> Войти</button>
+      </div>
+    </div>
+  </div>
+
+  
 </body>
 </html>
