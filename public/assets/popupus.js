@@ -39,5 +39,14 @@ document.addEventListener('touchend', (e) => {
   touchendY = e.changedTouches[0].screenY;
   if (touchendY > touchstartY) {
     popUpent.classList.remove('open');
+    const error_message = document.getElementById('error_message');
+      error_message.textContent = '';
+      error_message.style.display = 'none';
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const password_2 = document.getElementById('password_2');
+      email.classList.remove('error');
+      password.classList.remove('error');
+      password_2.classList.remove('error');
   }
 });

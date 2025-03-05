@@ -210,3 +210,16 @@ body {
   padding: 10px;
   margin-bottom: 15px;
 }
+
+.error_message {
+  color: #E40060;
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.error {
+  border: 1px solid #FF97C3;
+  background-color: #FFDEEC;
+}

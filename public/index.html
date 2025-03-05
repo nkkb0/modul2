@@ -6,6 +6,7 @@
   <title>twitter</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="assets/popupus.js" defer></script>
+  <script src="assets/reg_button.js" defer type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -180,16 +181,17 @@
       <div class="popup__content">
         <div class="popup__close"></div>
         <div class="popup__title">Регистрация</div>
+        <div class="error_message" id="error_message"></div>
         <div>
-          <input class="email" placeholder="электронная почта" type="text" name="username" value="" />
+          <input class="email" id="email" placeholder="электронная почта" type="text" name="username" value="" />
         </div>
         <div>
-          <input class="password" placeholder="пароль" type="password" name="userpass" value="" />
+          <input class="password" id="password" placeholder="пароль" type="password" name="userpass" value="" />
         </div>
         <div>
-          <input class="password_2" placeholder="подтверждение пароля" type="password" name="userpass2" value="" />
+          <input class="password_2" id="password_2" placeholder="подтверждение пароля" type="password" name="userpass2" value="" />
         </div>
-        <button class="reg_button3"> Зарегестрироваться</button>
+        <button class="reg_button3" id="reg_button3"> Зарегестрироваться</button>
       </div>
     </div>
   </div>
@@ -210,6 +212,5 @@
     </div>
   </div>
 
-  
 </body>
 </html>
