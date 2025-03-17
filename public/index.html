@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="assets/popupus.js" defer></script>
   <script src="assets/reg_button.js" defer type="module"></script>
+  <script src="assets/api.js" defer type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -18,156 +19,12 @@
 
     <img class="people" src="images/cover.png" alt="люди у костра">
 
-    <div class="statics">
-      <div class="static__items">
-        <div class="static__number">20</div>
-        <div class="static__text"> Пользователей зарегестрировано</div>
-      </div>
-
-      <div class="static__items">
-        <div class="static__number">556</div>
-        <div class="static__text"> Сообщений написано</div>
-      </div>
-
-      <div class="static__items">
-        <div class="static__number">58</div>
-        <div class="static__text"> Написано сегодня</div>
-      </div>
+    <div class="statics" id="statics">
+      
     </div>
 
-    <div class="posts">
+    <div class="posts" id="posts">
       <div class="post__header">Последние сообщения</div>
-
-
-      <div class="tweet">
-        <img class="avatar" src="images/vega.png" alt="">
-        <div class="avname">
-          <div class="post__auther">
-            <div class="nnname">
-              <div class="name">Винсет Вега</div>
-              <div class="nname">@roizmangbn</div>
-            </div>
-            <div class="timeago">28 минут назад</div>
-          </div>
-          <div class="tweet__text">
-            У них там все немного не так. В смысле, у них там все точно так же, как и здесь, только немного по-другому.
-          </div>
-
-          <div class="group">
-            <div>
-              <img src="images/rep.png" alt=""> 
-              <span>21</span>
-            </div>
-            <div>
-              <img src="images/like.png" alt=""> 
-              <span>23</span>
-            </div>
-            <div>
-              <img src="images/dld.png" alt=""> 
-              <span>9</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="line"></div>
-
-    <div class="tweet">
-      <img class="avatar" src="images/Musk.png" alt="">
-      <div class="avname">
-        <div class="post__auther">
-          <div class="nnname">
-            <div class="name">Elon Musk</div>
-            <div class="nname">@elonmusk</div>
-          </div>
-          <div class="timeago">12 часов назад</div>
-          </div>
-          <div class="tweet__text">
-            Has anyone seen web3? I can’t find it.
-          </div>
-
-        <div class="group">
-          <div>
-            <img src="images/rep.png" alt=""> 
-            <span>21</span>
-          </div>
-          <div>
-            <img src="images/like.png" alt=""> 
-            <span>23</span>
-          </div>
-          <div>
-            <img src="images/dld.png" alt=""> 
-            <span>9</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <div class="line"></div>
-
-  <div class="tweet">
-    <img class="avatar" src="images/alexander.png" alt="">
-    <div class="avname">
-      <div class="post__auther">
-        <div class="nnname">
-          <div class="name">Александр</div>
-          <div class="nname">@sportsru</div>
-        </div>
-        <div class="timeago">2 часа назад</div>
-      </div>
-      <div class="tweet__text">
-        Прикладываю фотки с последнего матча. С каждым днем играю все лучше. Еще пару лет и можно на Олимпиаду ехать!
-        <img src="images/tenis.png" alt="">
-      </div>
-
-      <div class="group">
-        <div>
-          <img src="images/rep.png" alt=""> 
-          <span>21</span>
-        </div>
-        <div>
-          <img src="images/like.png" alt=""> 
-          <span>23</span>
-        </div>
-        <div>
-          <img src="images/dld.png" alt=""> 
-          <span>9</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="line"></div>
-
-  <div class="tweet">
-    <img class="avatar" src="images/mia.png" alt="">
-    <div class="avname">
-      <div class="post__auther">
-        <div class="nnname">
-          <div class="name">Мия Уоллес</div>
-          <div class="nname">@mia</div>
-        </div>
-        <div class="timeago">1 день назад</div>
-      </div>
-      <div class="tweet__text">
-        Идут по улице три помидора: папа-помидор, мама-помидор и ребенок-помидор. Ребенок-помидор начинает отставать. Папа-помидор разозлился, подбегает к ребенку-помидору, раздавливает всмятку... и говорит: «Догоняй, кетчуп!»
-      </div>
-    
-      <div class="group">
-        <div>
-          <img src="images/rep.png" alt=""> 
-          <span>21</span>
-        </div>
-        <div>
-          <img src="images/like.png" alt=""> 
-          <span>23</span>
-        </div>
-        <div>
-          <img src="images/dld.png" alt=""> 
-          <span>9</span>
-        </div>
-      </div>
-    </div> 
   </div>
 
   <div class="endreg">
