@@ -6,7 +6,7 @@ fetch('https://burtovoy.github.io/messages.json').then((res) => {
   if (res.ok) {
     loader.classList.add('hidden');
   }
-})
+});
 
 document.addEventListener('DOMContentLoaded', async function () {
   const ap1 = await fetch('https://burtovoy.github.io/statistic.json');
