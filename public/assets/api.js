@@ -40,8 +40,15 @@ document.addEventListener('DOMContentLoaded', async function () {
   const avNameArr = avName.pictures;
 
   const posts = document.querySelector('.posts');
-  let now = new Date();
-  now = now.toISOString();
+  const now = Date.now();
+
+  function timeToTime(str) {
+    const [datePart, timePart] = str.split(' ');
+    const [day, month, year] = datePart.split('.');
+    const [hours, minutes] = timePart.split(':');
+    const date = new Date(year, month - 1, day, hours, minutes);
+    return date;
+  }
 
   messagesArr.forEach((message, index) => {
     const ava = avNameArr[index];
@@ -54,7 +61,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 <div class="name">${message.name}</div>
                 <div class="nname">${message.mail}</div>
               </div>
-              <div class="timeago">${convertTime(messagesArr.date, now)}</div>
+              <div class="timeago" data-time="${message.date}">${convertTime(timeToTime(message.date), now)}</div>
             </div>
             <div class="tweet__text">
             ${message.message}
@@ -81,4 +88,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       <div class="line"></div> `;
     posts.innerHTML += post;
   });
+  function UpdateTime() {
+    const timeago = document.querySelectorAll('.timeago');
+    timeago.forEach((e) => {
+      const resultTime = timeToTime(e.getAttribute('data-time'));
+      e.textContent = convertTime(resultTime, now);
+    });
+  }
+  setInterval(UpdateTime, 60000);
 });
