@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>twitter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="assets/popupus.js" defer></script>
+  <script src="assets/reg_button.js" defer type="module"></script>
+  <script src="assets/api.js" defer type="module"></script>
+</head>
+<body>
+    <header class="header">
+      <img class="dolphin" src="images/Vector.svg" alt="логотип">
+      <h1>Оставайся на связи с друзьями, даже когда их нет рядом</h1>
+      <button class="reg_button1  popup-link_reg"> Зарегестрироваться</button> <br>
+      <button class="ent_button1 popup-link_ent"> Войти</button>
+    </header>
+
+    <img class="people" src="images/cover.png" alt="люди у костра">
+
+    <div class="statics" id="statics">
+      
+    </div>
+
+    <div class="posts" id="posts">
+      <div class="post__header">Последние сообщения</div>
+      <div class="loader">
+        <div class = "circle"></div>
+        <p>я загружаюсь...</p>
+      </div>
+  </div>
+
+  <div class="endreg">
+    <p class="regtext">Зарегистрируйтесь и узнайте обо всём первым</p>
+    <button class="reg_button2 popup-link_reg" data-popup="popup1"> Зарегестрироваться</button> <br>
+    <button class="ent_button2 popup-link_ent"> Войти</button>
+  </div>
+
+  <div class="popup" id="popup1">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__close"></div>
+        <div class="popup__title">Регистрация</div>
+        <div class="error_message" id="error_message"></div>
+        <div>
+          <input class="email" id="email" placeholder="электронная почта" type="text" name="username" value="" />
+        </div>
+        <div>
+          <input class="password" id="password" placeholder="пароль" type="password" name="userpass" value="" />
+        </div>
+        <div>
+          <input class="password_2" id="password_2" placeholder="подтверждение пароля" type="password" name="userpass2" value="" />
+        </div>
+        <button class="reg_button3" id="reg_button3"> Зарегестрироваться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup2">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__close"></div>
+        <div class="popup__title">Авторизация</div>
+        <div>
+          <input class="email" placeholder="электронная почта" type="text" name="username" value="" />
+        </div>
+        <div>
+          <input class="password" placeholder="пароль" type="password" name="userpass" value="" />
+        </div>
+        <button class="reg_button3"> Войти</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
