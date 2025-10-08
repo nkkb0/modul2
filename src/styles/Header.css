@@ -1,0 +1,29 @@
+.header, .endreg {
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  font-weight: 800;
+}
+
+.dolphin {
+  margin-top: 24px;
+}
+
+@media (min-width: 1280px) {
+  .header {
+    display: inline-block;
+    width: 640px;
+    text-align: left;
+    margin: 42px 782px 0 64px;
+    font-weight: 800;
+  }
+
+  .dolphin{
+    width: 44px;
+  }
+
+  .header h1 {
+    width: 434px;
+    font-size: 48px;
+  }
+}

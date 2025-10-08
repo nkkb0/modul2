@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:wght@100..900&display=swap');
 
 
-body {
+/* body {
 
   font-family: Roboto;
 }
@@ -74,16 +74,16 @@ body {
 .posts {
   padding: 32px 0px 32px 0px;
   width: 100%;
-}
+} */
 
-.post__header {
+/* .post__header {
   font-weight: 800;
   font-size: 24px;
   padding-bottom: 25px;
   text-align: left;
-}
+} */
 
-.tweet {
+/* .tweet {
   display: flex;
 }
 
@@ -141,22 +141,22 @@ body {
 
 .tennis {
   width: 95%;
-}
+} */
 
-.line {
+/* .line {
   width: 100%;
   height: 1px;
   background-color: #e9e9e9;
   margin: 10px 0px;
-}
+} */
 
-.regtext {
+/* .regtext {
   text-align: center;
   font-weight: 800;
   font-size: 32px;
-}
+} */
 
-.popup {
+/* .popup {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -185,8 +185,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
+} */
+/* 
 .popup__content {
   padding: 20px;
 }
@@ -204,9 +204,9 @@ body {
   font-weight: 800;
   font-size: 24px;
   padding: 10px;
-}
+} */
 
-.email, .password, .password_2 {
+/* .email, .password, .password_2 {
   border: 1px solid #DFDFDF;
   border-radius: 10px;
   font-size: 18px;
@@ -221,14 +221,14 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 15px;
-}
-
+} */
+/* 
 .error {
   border: 1px solid #FF97C3;
   background-color: #FFDEEC;
-}
+} */
 
-.loader {
+/* .loader {
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -253,7 +253,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  }
+  } */
 
   @keyframes rotation {
   0% {
@@ -264,6 +264,6 @@ body {
   }
   } 
 
-  .hidden {
+  /* .hidden {
     display: none;
-  }
+  } */

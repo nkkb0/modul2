@@ -1,0 +1,149 @@
+.reg_button1, .reg_button2, .reg_button3 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #0057ff;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.ent_button1, .ent_button2 {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #0057ff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #0057ff;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__body {
+  background: white;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  padding: 20px;
+}
+
+.popup__close {
+  width: 50px;
+  height: 4px;
+  background-color: #ABACB1;
+  border: 1px solid #ABACB1;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.popup__title {
+  font-weight: 800;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.email, .password, .password_2 {
+  border: 1px solid #DFDFDF;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.error_message {
+  color: #E40060;
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.error {
+  border: 1px solid #FF97C3;
+  background-color: #FFDEEC;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.popup__close_desktop {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .reg_button1, .ent_button1 {
+    margin: 0 0 16px 64px;
+    display: inline-block;
+    width: 270px;
+  }
+
+  .reg_button2 {
+    float: left;
+  }
+
+  .button_group {
+    margin: 36px 0 100px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .popup.open {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    margin-left: -10px;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .popup__body {
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .popup__content {
+    padding: 30px;
+  }
+  .popup__close {
+    display: none;
+  }
+
+  .popup__close_desktop {
+    border: none;
+    font-size: 18px;
+    color: #000;
+    background: none;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
