@@ -16,7 +16,9 @@ const Statistic = () => {
   }, []);
   return (
     <>
-    <img className="people" src="images/cover.png" alt="люди у костра"></img>
+    <div className="people">
+      <img src="images/cover1.png" alt="люди у костра"></img>
+    </div>
     <div className="statics">
       <div className="static__items">
         <div className="static__number">{stat.usersRegistr}</div>

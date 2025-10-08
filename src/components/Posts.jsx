@@ -55,12 +55,68 @@
   return (
     <>
     <div className="post__header">Последние сообщения</div>
-    {loading ? (
-      <div className="loader">
-          <div className="circle"></div>
-          <p>я загружаюсь...</p>
+    <div className='posts_and_miniposts'>
+      <div className='tweet_block'>
+      {loading ? (
+        <div className="loader">
+            <div className="circle"></div>
+            <p>я загружаюсь...</p>
+        </div>
+      ) : (posts)}
       </div>
-    ) : (posts)}
+      <div className='minipostS_container'>
+        <div className='minipost_container'>
+          <div className='header_tweet'>Актуальные темы</div>
+          <div className ='minipost'>
+            <div className ='mini_namepost'>#javascript</div>
+            <div className ='mini_qualitypost'>2 941 сообщение</div>
+          </div>
+          <div className ='minipost'>
+            <div className ='mini_namepost'>#python3</div>
+            <div className ='mini_qualitypost'>29 718 сообщений</div>
+          </div>
+          <div className ='minipost'>
+            <div className ='mini_namepost'>#ruby</div>
+            <div className ='mini_qualitypost'>958 186 сообщений</div>
+          </div>
+          <div className ='minipost'>
+            <div className ='mini_namepost'>#как_научиться_коду?</div>
+            <div className ='mini_qualitypost'>4 185 сообщений</div>
+          </div>
+          <div className ='minipost'>
+            <div className ='mini_namepost'>#помогите_с_кодом</div>
+            <div className ='mini_qualitypost'>482 сообщения</div>
+          </div>
+        </div>
+        <div className='minipost_container'>
+          <div className='header_tweet'>Интереные блогеры</div>
+          <div className='trio'>
+            <img className='pic' src="images/Ellipse 2.png" alt="" />
+            <div className ='minipost'>
+              <div className ='mini_namepost'>Хабр Научпоп</div>
+              <div className ='mini_qualitypost'>@habr_popsci</div>
+            </div>
+            <button className='read'>Читать</button>
+          </div>
+          <div className='trio'>
+            <img className='pic' src="images/Ellipse 3.png" alt="" />
+            <div className ='minipost'>
+              <div className ='mini_namepost'>Матч ТВ</div>
+              <div className ='mini_qualitypost'>@MatchTV</div>
+            </div>
+            <button className='read'>Читать</button>
+          </div>
+          <div className='trio'>
+            <img className='pic' src="images/Ellipse 4.png" alt="" />
+            <div className ='minipost'>
+              <div className ='mini_namepost'>Популярная меха...</div>
+              <div className ='mini_qualitypost'>@PopMechanica</div>
+            </div>
+            <button className='read'>Читать</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <p className="regtext">Зарегистрируйтесь и узнайте обо всём первым</p>
     </>
   )
@@ -117,7 +173,6 @@ const Message = ({ id, picUrl, name, mail, date, pic, message, quantityReposts, 
         </div>
       </div>
     </div>
-
     <div className="line"></div>
   </>
   )

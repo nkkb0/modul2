@@ -26,6 +26,11 @@ export default function Button() {
     setSwipeStart(null);
   };
 
+  const closePopup = (e) => {
+    setRegPopup(false);
+    setEntPopup(false);
+    resetFormFields();
+  }
 
   const handleReg = (e) => {
     e.preventDefault();
@@ -93,6 +98,7 @@ export default function Button() {
           <div className="popup__content">
             <form>
               <div className="popup__close"></div>
+              <button onClick={closePopup} className="popup__close_desktop">X</button>
               <div className="popup__title">Регистрация</div>
               <div className="error_message" id="error_message" style={{ display: errorMessage ? 'block' : 'none' }}>{errorMessage}</div>
               <div>
@@ -124,6 +130,7 @@ export default function Button() {
           <div className="popup__content">
             <form>
               <div className="popup__close"></div>
+              <button onClick={closePopup} className="popup__close_desktop">X</button>
               <div className="popup__title">Авторизация</div>
               <div>
                 <input className="email" placeholder="электронная почта" type="text" name="username" value={email} onChange={(e) => setEmail(e.target.value)} autoсomplete="email" />
